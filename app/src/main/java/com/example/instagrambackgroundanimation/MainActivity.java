@@ -11,7 +11,7 @@ import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    RelativeLayout myLayout;
+    ConstraintLayout myLayout;
     AnimationDrawable animationDrawable;
 
     @Override
@@ -19,12 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        myLayout =(RelativeLayout) findViewById(R.id.myLayout);
+        myLayout =(ConstraintLayout) findViewById(R.id.myLayout);
 
-        animationDrawable =(AnimationDrawable)myLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(4500);
-        animationDrawable.setExitFadeDuration(4500);
-        animationDrawable.start();
+
 
     }
 }
